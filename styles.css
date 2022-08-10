@@ -79,6 +79,10 @@ main {
   color: #32a852;
 }
 
+.tie {
+  color: #a83232;
+}
+
 .btn_again {
   cursor: pointer;
   font-size: 2.5rem;

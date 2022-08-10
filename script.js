@@ -45,6 +45,7 @@ const Game = () => {
       }
       if (!board.includes("") && a !== b && b !== c) {
         winner_div.textContent = `Tie`;
+        winner_div.classList.add("tie");
         btn_again.classList.remove("display");
         roundWon = true;
       }
@@ -69,6 +70,7 @@ const Game = () => {
     div_game.forEach((div) => {
       div.textContent = "";
     });
+    winner_div.classList.remove("tie");
     btn_again.classList.add("display");
     winner_div.textContent = "";
     roundWon = false;
